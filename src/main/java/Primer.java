@@ -5,7 +5,8 @@ import javax.persistence.*;
 public class Primer {
     @Id
     @Column(name = "primer_id")
-    int primer_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Integer primer_id;
 
     @Column(name = "first_name")
     String first_name;
